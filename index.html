@@ -15,13 +15,56 @@
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-sm navbar-light bg-dark">
-        <img class="img-fluid ms-3" width="80" src="img/duck.png" alt="" />
+      <nav
+        class="navbar navbar-expand-lg bg-body-tertiary"
+        data-bs-theme="dark"
+      >
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/duck.png" alt="Duck" width="60" height="60" />
+          </a>
 
-        <div class="dropdown position-absolute top-20 end-0 me-3">
-          <b class="btn btn-outline-secondary dropdown-toggle btn-lg"
-            ><i class="fa-solid fa-bars"></i
-          ></b>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Catalogo Libri</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Anagrafica Utenti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Storico prestiti</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Help</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
         </div>
       </nav>
     </header>
